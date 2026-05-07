@@ -244,6 +244,7 @@ public class VehicleRentalSwingApp {
         panel.add(title, BorderLayout.NORTH);
         panel.add(buildVehicleTablePane(), BorderLayout.CENTER);
         panel.setAlignmentX(Component.LEFT_ALIGNMENT);
+        panel.setMaximumSize(new Dimension(Integer.MAX_VALUE, Integer.MAX_VALUE));
         return panel;
     }
 
@@ -263,6 +264,7 @@ public class VehicleRentalSwingApp {
         panel.add(heading, BorderLayout.NORTH);
         panel.add(buildRentedTablePane(), BorderLayout.CENTER);
         panel.setAlignmentX(Component.LEFT_ALIGNMENT);
+        panel.setMaximumSize(new Dimension(Integer.MAX_VALUE, Integer.MAX_VALUE));
         return panel;
     }
 
@@ -283,6 +285,7 @@ public class VehicleRentalSwingApp {
         panel.add(infoLabel, BorderLayout.CENTER);
         panel.add(actions, BorderLayout.EAST);
         panel.setAlignmentX(Component.LEFT_ALIGNMENT);
+        panel.setMaximumSize(new Dimension(Integer.MAX_VALUE, panel.getPreferredSize().height));
         return panel;
     }
 
@@ -404,6 +407,8 @@ public class VehicleRentalSwingApp {
         rentalPanel.add(headingPanel, BorderLayout.NORTH);
         rentalPanel.add(formGrid, BorderLayout.CENTER);
         rentalPanel.add(footer, BorderLayout.SOUTH);
+        rentalPanel.setAlignmentX(Component.LEFT_ALIGNMENT);
+        rentalPanel.setMaximumSize(new Dimension(Integer.MAX_VALUE, rentalPanel.getPreferredSize().height));
         return rentalPanel;
     }
 
@@ -547,6 +552,7 @@ public class VehicleRentalSwingApp {
                 BorderFactory.createLineBorder(new Color(220, 226, 232)),
                 new EmptyBorder(16, 16, 16, 16)
         ));
+        panel.setAlignmentX(Component.LEFT_ALIGNMENT);
         return panel;
     }
 
